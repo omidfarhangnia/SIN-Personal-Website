@@ -11,8 +11,15 @@
 </head>
 <body>
     <div class="loader__container d-flex flex-column justify-content-center align-items-center">
-        <div class="bg-warning p-5"></div>
-        <div class="bg-warning p-5"></div>
+        <div class="loader__ball__container position-relative">
+            <div class="loader__ball position-absolute"></div>
+        </div>
+        <div class="loader__linear__container mt-3 mt-md-4">
+            <div class="loader__linear position-relative">
+                <hr class="loader__linear--hr w-100 position-absolute">
+                <div class="loader__linear--center--line position-absolute"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
