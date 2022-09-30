@@ -112,19 +112,6 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .loader__linear--line--right-9{
     right: 40%;
 }
-.loader__linear--filler{
-    background: #000;
-    animation: FillTheLinearAnimation 3s 1 1s ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes FillTheLinearAnimation {
-    0%{
-        width: 1px;
-    }
-    100%{
-        width: 100%;
-    }
-}
 /* media queries for loader styles */
 @media (min-width: 650px) {
     .loader__ball{
