@@ -1,7 +1,7 @@
 /* ball style and animation */
 .loader__container{
     height: 100vh;
-    background: white;   
+    background: #fff;   
 }
 .loader__container > div{
     width: 75%;
@@ -9,7 +9,7 @@
 .loader__ball{
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 3px solid #000;
     border-radius: 50%;
     bottom: 100%;
     left: 0;
@@ -45,15 +45,73 @@
 }
 .loader__linear--hr{
     height: 2px;
-    color: rgb(0, 0, 0);
-    background-color: black;
+    color: #000;
+    background-color: #000;
     opacity: 1;
 }
-.loader__linear--center--line{
-    width: 2px;
-    height: 20px;
-    background: green;
-    top: 25%;
+div[class *= "loader__linear--line"]{
+    width: 1px;
+    height: 15px;
+    background: #000;
+    top: 31%;
+}
+.loader__linear--line--left-1{
+    left: 0;
+}
+.loader__linear--line--left-2{
+    left: .8%;
+}
+.loader__linear--line--left-3{
+    left: 1.8%;
+}
+.loader__linear--line--left-4{
+    left: 3.5%;
+}
+.loader__linear--line--left-5{
+    left: 7%;
+}
+.loader__linear--line--left-6{
+    left: 13%;
+}
+.loader__linear--line--left-7{
+    left: 21%;   
+}
+.loader__linear--line--left-8{
+    left: 30.2%;
+}
+.loader__linear--line--left-9{
+    left: 40%;
+}
+.loader__linear--line--center{
+    left: 50%;
+}
+/* 1 2 3.5 5 6 8 15   */
+.loader__linear--line--right-1{
+    right: 0;
+}
+.loader__linear--line--right-2{
+    right: .8%;
+}
+.loader__linear--line--right-3{
+    right: 1.8%;
+}
+.loader__linear--line--right-4{
+    right: 3.5%;
+}
+.loader__linear--line--right-5{
+    right: 7%;
+}
+.loader__linear--line--right-6{
+    right: 13%;
+}
+.loader__linear--line--right-7{
+    right: 21%;
+}
+.loader__linear--line--right-8{
+    right: 30.2%;
+}
+.loader__linear--line--right-9{
+    right: 40%;
 }
 /* media queries for loader styles */
 @media (min-width: 650px) {
@@ -67,11 +125,10 @@
         height: 2.5px;
         top: 15px;
     }
-    .loader__linear--center--line{
-        width: 3px;
+    div[class *= "loader__linear--line"]{
+        width: 2px;
         height: 25px;
-        background: green;
-        top: 70%;
+        top: 68%;
     }
 }
 @media (min-width: 1000px) {
@@ -88,10 +145,8 @@
         height: 3px;
         top: 25px;
     }
-    .loader__linear--center--line{
-        width: 3px;
+    div[class *= "loader__linear--line"]{
         height: 30px;
-        background: green;
         top: 90%;
     }
 }
