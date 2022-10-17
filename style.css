@@ -1,3 +1,10 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&display=swap');
+/* root */
+:root{
+}
 /* ball style and animation */
 .loader__container{
     height: 100vh;
@@ -55,63 +62,25 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     background: #000;
     top: 31%;
 }
-.loader__linear--line--left-1{
-    left: 0;
-}
-.loader__linear--line--left-2{
-    left: .8%;
-}
-.loader__linear--line--left-3{
-    left: 1.8%;
-}
-.loader__linear--line--left-4{
-    left: 3.5%;
-}
-.loader__linear--line--left-5{
-    left: 7%;
-}
-.loader__linear--line--left-6{
-    left: 13%;
-}
-.loader__linear--line--left-7{
-    left: 21%;   
-}
-.loader__linear--line--left-8{
-    left: 30.2%;
-}
-.loader__linear--line--left-9{
-    left: 40%;
-}
-.loader__linear--line--center{
-    left: 50%;
-}
-.loader__linear--line--right-1{
-    right: 0;
-}
-.loader__linear--line--right-2{
-    right: .8%;
-}
-.loader__linear--line--right-3{
-    right: 1.8%;
-}
-.loader__linear--line--right-4{
-    right: 3.5%;
-}
-.loader__linear--line--right-5{
-    right: 7%;
-}
-.loader__linear--line--right-6{
-    right: 13%;
-}
-.loader__linear--line--right-7{
-    right: 21%;
-}
-.loader__linear--line--right-8{
-    right: 30.2%;
-}
-.loader__linear--line--right-9{
-    right: 40%;
-}
+.loader__linear--line--left-1{left: 0;}
+.loader__linear--line--left-2{left: .8%;}
+.loader__linear--line--left-3{left: 1.8%;}
+.loader__linear--line--left-4{left: 3.5%;}
+.loader__linear--line--left-5{left: 7%;}
+.loader__linear--line--left-6{left: 13%;}
+.loader__linear--line--left-7{left: 21%;   }
+.loader__linear--line--left-8{left: 30.2%;}
+.loader__linear--line--left-9{left: 40%;}
+.loader__linear--line--center{left: 50%;}
+.loader__linear--line--right-1{right: 0;}
+.loader__linear--line--right-2{right: .8%;}
+.loader__linear--line--right-3{right: 1.8%;}
+.loader__linear--line--right-4{right: 3.5%;}
+.loader__linear--line--right-5{right: 7%;}
+.loader__linear--line--right-6{right: 13%;}
+.loader__linear--line--right-7{right: 21%;}
+.loader__linear--line--right-8{right: 30.2%;}
+.loader__linear--line--right-9{right: 40%;}
 /* media queries for loader styles */
 @media (min-width: 650px) {
     .loader__ball{
@@ -148,4 +117,44 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
         height: 30px;
         top: 90%;
     }
+}
+/* styling web page */
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.page__header{
+    height: 100vh;
+    background: radial-gradient(#012453 30%, #01122a);
+}
+.header__heading{
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: "Vazirmatn";
+    font-weight: 800;
+    line-height: 7rem;
+    border-top: .2rem solid #8092a9;
+    border-bottom: .2rem solid #8092a9;
+}
+@media (max-width: 667px){
+    :root{
+		font-size: 8px;
+    }
+}
+@media (min-width: 668px) {
+    :root{
+		font-size: 14px;
+
+    }
+}
+@media (min-width: 1100px) {
+    :root{
+		font-size: 20px;
+    }
+	.center__point{
+		width: 3rem;
+		height: 3rem;
+		right: calc(50% - 1.5rem);
+		top: calc(50% - 1.5rem);
+	}
 }
