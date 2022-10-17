@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&display=swap');
-/* root */
-:root{
+@font-face {
+    font-family: "Myriad Arabic Regular";
+    src: url(./fonts/Myriad\ Arabic\ Regular/);
+}
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url(./fonts/Myriad\ Pro\ Regular/);
 }
 /* ball style and animation */
 .loader__container{
@@ -130,11 +135,22 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .header__heading{
     color: #ffffff;
     font-size: 4rem;
-    font-family: "Vazirmatn";
     font-weight: 800;
     line-height: 7rem;
+    font-family: "Vazirmatn";
     border-top: .2rem solid #8092a9;
     border-bottom: .2rem solid #8092a9;
+}
+.header__heading--english{
+    font-weight: 800;   
+}
+.header__hastags{
+    font-size: 1.8rem;
+}
+.header__hastags--persion , .header__hastags--english {
+    display: flex;
+    gap: 3rem;
+    color: #ffffff;
 }
 @media (max-width: 667px){
     :root{
