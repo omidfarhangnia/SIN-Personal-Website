@@ -124,10 +124,6 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     }
 }
 /* styling web page */
-*{
-    margin: 0 !important;
-    padding: 0 !important;
-}
 .page__header{
     height: 100vh;
     background: radial-gradient(#012453 30%, #01122a);
@@ -136,10 +132,11 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     color: #ffffff;
     font-size: 4rem;
     font-weight: 800;
-    line-height: 7rem;
+    line-height: 6rem;
     font-family: "Vazirmatn";
     border-top: .2rem solid #8092a9;
     border-bottom: .2rem solid #8092a9;
+    width: 40%;
 }
 .header__heading--english{
     font-weight: 800;   
@@ -147,11 +144,48 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .header__hastags{
     font-size: 1.8rem;
 }
-.header__hastags--persion , .header__hastags--english {
+.header__hastags--persian , .header__hastags--english {
     display: flex;
     gap: 3rem;
     color: #ffffff;
 }
+.main__about__SIN{
+    padding: 2rem;
+}
+.about__prag{
+    margin-top: 2rem;
+    gap: 1.4rem;
+}
+.prag__presian--header , .prag__english--header{
+    font-size: 1.8rem;
+}
+.about__prag--presian{
+    font-family: "Vazirmatn";
+    font-weight: 800;
+}
+.about__prag--english{
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+}
+.prag__presian--pragraph , .prag__english--pragraph{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+@media (max-width: 400px) {
+    .header__heading{
+        width: 70%;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 760px) {
+    .prag__presian--header , .prag__english--header{
+        font-size: 1.4rem;
+    }
+    .prag__presian--pragraph , .prag__english--pragraph{
+        font-size: .9rem;
+    }
+}
+
 @media (max-width: 667px){
     :root{
 		font-size: 8px;
