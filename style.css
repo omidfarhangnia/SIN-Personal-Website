@@ -158,15 +158,16 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     gap: 1.4rem;
 }
 .prag__presian--header , .prag__english--header{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 .about__prag--presian{
     font-family: "Vazirmatn";
-    font-weight: 800;
+    font-weight: 500;
 }
 .about__prag--english{
     font-family: "Barlow Condensed";
-    font-weight: 700;
+    font-weight: 500;
 }
 .prag__presian--pragraph , .prag__english--pragraph{
     font-size: 1.2rem;
@@ -321,6 +322,32 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 @media (max-width: 570px) {
     .main__samples__movies > video{
         height: 250px;
+    }
+}
+/* page footer */
+.page__footer{
+    background-color: #002453;
+    font-family: "Vazirmatn";
+    padding: 2rem;
+}
+.page__footer > address{
+    background-color: #2f3462;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.page__footer > address > h4{
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+.page__footer > address > p{
+    font-size: 1rem;
+}
+@media (min-width: 900px) {
+    .page__footer{
+        align-items: stretch !important;
+    }
+    .page__footer > address{
+        width: 45%;
     }
 }
 /* responsive website */
