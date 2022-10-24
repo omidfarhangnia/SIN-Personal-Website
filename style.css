@@ -250,6 +250,15 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
         margin-bottom: 7px;
     }
 }
+/* work experience */
+.work__experience--wallpaper{
+    display: flex;
+    justify-content: center;
+}
+.work__experience--wallpaper > img{
+    width: 90%;
+    object-fit: contain;
+}
 /* responsive website */
 @media (max-width: 667px){
     :root{
