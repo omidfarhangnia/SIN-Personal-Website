@@ -188,10 +188,11 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 }
 /* SIN's skill */
 .main__animator__skills{
-    background: url(./images/third\ man\ image.png),url(./images/second\ man\ image.png),url(./images/first\ man\ image.png);
+    background-image: url(./images/third\ man\ image.png),url(./images/second\ man\ image.png),url(./images/first\ man\ image.png);
     background-size: 100% 33%;
     background-repeat: no-repeat;
     background-position: 0% 0%, 0% 50%, 0% 100%;
+    background-color: #f6f6f6;
 }
 .skills__header{
     margin: 2rem 0;
@@ -251,6 +252,9 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     }
 }
 /* work experience */
+.main__work__experience{
+    background-color: #f6f6f6;
+}
 .work__experience--wallpaper{
     display: flex;
     justify-content: center;
@@ -273,13 +277,52 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
-.work__experience__lists--persian{ /* ldldkdkdkd */
+.work__experience__lists > div > ul{
+    font-size: 1.2rem;
+}
+.work__experience__lists--persian{
     border-radius: 3rem 0;
 }
-.work__experience__lists--english{ /* ldldkdkdkd */
+.work__experience__lists--english{
     border-radius: 0 3rem;
 }
-
+/* SINs' Sample */
+.main__samples{
+    padding: 2rem 0;
+}
+.main__samples__header{
+    margin-bottom: 2rem;
+}
+.main__samples__header > h2{
+    font-size: 3rem;
+    font-family: "Vazirmatn";
+    font-weight: 800;
+}
+.main__samples__movies{
+    gap: 3rem;
+}
+.main__samples__movies > video{
+    width: 60%;
+    height: 500px;
+    background: black;
+}
+@media (max-width: 1100px) {
+    .main__samples__movies > video{
+        width: 70%;
+        height: 300px;
+    }
+}
+@media (max-width: 668px) {
+    .main__samples__movies > video{
+        width: 85%;
+        height: 300px;
+    }
+}
+@media (max-width: 570px) {
+    .main__samples__movies > video{
+        height: 250px;
+    }
+}
 /* responsive website */
 @media (max-width: 667px){
     :root{
