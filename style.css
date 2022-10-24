@@ -149,6 +149,7 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     gap: 3rem;
     color: #ffffff;
 }
+/* about SIN */
 .main__about__SIN{
     padding: 2rem;
 }
@@ -185,7 +186,71 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
         font-size: .9rem;
     }
 }
-
+/* SIN's skill */
+.main__animator__skills{
+    background: url(./images/third\ man\ image.png),url(./images/second\ man\ image.png),url(./images/first\ man\ image.png);
+    background-size: 100% 33%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 0% 50%, 0% 100%;
+}
+.skills__header{
+    margin: 2rem 0;
+}
+.skills__header > h3{
+    font-family: "Vazirmatn";
+    line-height: 3rem;
+    font-weight: 800;
+    font-size: 1.9rem;
+}
+.skills__box{
+    background: rgba(7, 55, 117, 0.6);
+    margin: 2rem 0;
+    padding: 4rem 0;
+    width: 100%;
+}
+.skills__box > div{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Vazirmatn";
+    font-weight: 400;
+}
+.skills__boxes--persian{
+    margin-bottom: 1.3rem;
+}
+@media (min-width: 500px) {
+    .skills__box{
+        width: 47%;
+    }
+    .main__animator__skills{
+        background-size: 33%;
+        background-position: 0 center , 50% center , 100% center;
+    }
+}
+@media (min-width: 1000px) {
+    .skills__header{
+        margin: 28px 0;
+    }
+    .skills__header > h3{
+        line-height: 42px;
+        font-size: 26.6px;
+    }
+    .skills__box{
+        width: 20%;
+        margin: 28px 0;
+        padding: 56px 0;
+    }
+    .main__animator__skills{
+        background-size: 20%;
+        background-position: 10% center , 50% center , 90% center;
+    }
+    .skills__box > div{
+        font-size: 35px;
+    }
+    .skills__boxes--persian{
+        margin-bottom: 7px;
+    }
+}
+/* responsive website */
 @media (max-width: 667px){
     :root{
 		font-size: 8px;
