@@ -342,6 +342,27 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .page__footer > address > p{
     font-size: 1rem;
 }
+.call__us__data{
+    padding: .3rem 1rem .2rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.call__us__data::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 100%;
+    top: 0;
+    font-size: 1.2rem;
+    width: 200px;
+    display: none;
+}
+.call__us__data:hover{
+    background-color: #002453;
+}
+.call__us__data:hover::before{
+    display: block;
+}
 @media (min-width: 900px) {
     .page__footer{
         align-items: stretch !important;
