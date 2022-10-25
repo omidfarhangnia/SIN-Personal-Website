@@ -1,5 +1,6 @@
 const SIN__CURRENT__AGE__ENGLISH = document.getElementById("SIN__Current__Age--english");
 const SIN__CURRENT__AGE__PERSIAN = document.getElementById("SIN__Current__Age--persian");
+const CALL__US__DATA = document.querySelectorAll(".call__us__data");
 // window.addEventListener("load", CalcAge);
 
 const CalcAge  = function() {
@@ -20,3 +21,23 @@ const CalcAge  = function() {
     SIN__CURRENT__AGE__ENGLISH.innerHTML = SINCurrentAge;
     SIN__CURRENT__AGE__PERSIAN.innerHTML = ConvertNumberToPersian(SINCurrentAge);
 }();
+
+CALL__US__DATA.forEach((element) => {
+    element.addEventListener("click" , () => {
+        let ClipBoardValue = element.getAttribute("data-clipboard-text");
+        navigator.clipboard.writeText(ClipBoardValue);
+        // changing the value of tooltips
+        CALL__US__DATA.forEach((element) => {
+            // element.removeAttribute("data-tooltip");
+            element.setAttribute("data-tooltip" , "محتوا کپی شد");
+        })
+    })
+})
+
+CALL__US__DATA.forEach((element) => {
+    element.addEventListener("mouseout" , () => {
+        CALL__US__DATA.forEach((element) => {
+            element.setAttribute("data-tooltip" , "برای کپی کلیک کنید");
+        })
+    })
+})
