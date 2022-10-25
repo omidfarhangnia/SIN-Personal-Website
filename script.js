@@ -1,8 +1,8 @@
 const SIN__CURRENT__AGE__ENGLISH = document.getElementById("SIN__Current__Age--english");
 const SIN__CURRENT__AGE__PERSIAN = document.getElementById("SIN__Current__Age--persian");
-window.addEventListener("load", CalcAge);
+// window.addEventListener("load", CalcAge);
 
-function CalcAge () {
+const CalcAge  = function() {
     let SINCurrentAge, CurrentTime = new Date(), CurrentMonth = CurrentTime.getMonth() + 1, CurrentYear = CurrentTime.getFullYear();
     const SIN__MONTH__BIRTHDAY = 9, SIN__YEAR__BIRTHDAY = 2005;
     let ConvertNumberToPersian = function(n) {
@@ -19,4 +19,4 @@ function CalcAge () {
     }
     SIN__CURRENT__AGE__ENGLISH.innerHTML = SINCurrentAge;
     SIN__CURRENT__AGE__PERSIAN.innerHTML = ConvertNumberToPersian(SINCurrentAge);
-}
+}();
