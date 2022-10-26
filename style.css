@@ -10,6 +10,15 @@
     font-family: "Myriad Pro Regular";
     src: url(./fonts/Myriad\ Pro\ Regular/);
 }
+/* removing the navigation bar */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 /* ball style and animation */
 .loader__container{
     height: 100vh;
@@ -351,10 +360,10 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .call__us__data::before{
     content: attr(data-tooltip);
     position: absolute;
-    right: 100%;
-    top: 0;
-    font-size: 1.2rem;
-    width: 200px;
+    right: 103%;
+    top: .5rem;
+    font-size: .7rem;
+    width: 110%;
     display: none;
 }
 .call__us__data:hover{
