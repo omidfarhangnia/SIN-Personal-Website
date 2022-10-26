@@ -1,7 +1,24 @@
 const SIN__CURRENT__AGE__ENGLISH = document.getElementById("SIN__Current__Age--english");
 const SIN__CURRENT__AGE__PERSIAN = document.getElementById("SIN__Current__Age--persian");
 const CALL__US__DATA = document.querySelectorAll(".call__us__data");
-// window.addEventListener("load", CalcAge);
+const PAGE__SCROLL__BAR__HANDLE = document.querySelector(".page__scroll__bar--handle")
+window.addEventListener("load", currentWebSituation);
+window.addEventListener("scroll", currentWebSituation);
+
+function currentWebSituation () {
+    let heights = collectDataForSituation();
+    let OnePercent = heights.ThePageHeight / 100;
+    let CurrentPercent = heights.UserCurrentPage / OnePercent;
+    PAGE__SCROLL__BAR__HANDLE.style.width = `${CurrentPercent}%`;
+}
+
+function collectDataForSituation () {
+    let heights = {};
+    heights.UserPageHeight = window.innerHeight;
+    heights.ThePageHeight = document.body.scrollHeight;
+    heights.UserCurrentPage = window.scrollY + heights.UserPageHeight;
+    return heights;
+}
 
 const CalcAge  = function() {
     let SINCurrentAge, CurrentTime = new Date(), CurrentMonth = CurrentTime.getMonth() + 1, CurrentYear = CurrentTime.getFullYear();
