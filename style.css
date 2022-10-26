@@ -19,6 +19,20 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+/* style the custom scroll bar */
+.page__scroll__bar--container{
+    position: fixed;
+    width: 100%;
+    height: 4px;
+    z-index: 1;
+    top: 0;
+    background: rgb(153, 153, 153);
+}
+.page__scroll__bar--handle{
+    width: 20%;
+    height: 4px;
+    background: #ffffff;
+}
 /* ball style and animation */
 .loader__container{
     height: 100vh;
