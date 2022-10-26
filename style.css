@@ -29,7 +29,6 @@ body {
     background: rgb(153, 153, 153);
 }
 .page__scroll__bar--handle{
-    width: 20%;
     height: 4px;
     background: #ffffff;
 }
