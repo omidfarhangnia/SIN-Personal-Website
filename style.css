@@ -300,7 +300,10 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
-.work__experience__lists > div > ul{
+.work__experience__lists--header--english{
+    font-size: 1.1rem;
+}
+.work__experience__lists--header--persian{
     font-size: 1.2rem;
 }
 .work__experience__lists--persian{
