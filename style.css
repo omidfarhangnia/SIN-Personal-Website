@@ -213,9 +213,9 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 /* SIN's skill */
 .main__animator__skills{
     background-image: url(./images/third\ man\ image.png),url(./images/second\ man\ image.png),url(./images/first\ man\ image.png);
-    background-size: 100% 33%;
+    background-size: 60% 30%;
     background-repeat: no-repeat;
-    background-position: 0% 0%, 0% 50%, 0% 100%;
+    background-position: 50% 0%, 50% 50%, 50% 100%;
     background-color: #f6f6f6;
 }
 .skills__header{
