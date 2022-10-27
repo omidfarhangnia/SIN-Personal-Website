@@ -389,12 +389,21 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 .call__us__data:hover::before{
     display: block;
 }
+.address{
+    margin-bottom: 0 !important;
+}
+.Contact__us{
+    margin-bottom: 2rem !important;
+}
 @media (min-width: 900px) {
     .page__footer{
         align-items: stretch !important;
     }
     .page__footer > address{
         width: 45%;
+    }
+    .Contact__us{
+        margin-bottom: 0 !important;
     }
 }
 /* responsive website */
