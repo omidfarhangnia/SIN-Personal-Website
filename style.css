@@ -198,7 +198,8 @@ div[class *= "loader__linear--line"] , .loader__linear--filler{
 @media (max-width: 400px) {
     .header__heading{
         width: 70%;
-        font-size: 3rem;
+        font-size: 5.5rem;
+        line-height: 8rem;
     }
 }
 @media (min-width: 760px) {
